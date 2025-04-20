@@ -57,7 +57,8 @@ MeuServico servico = new MeuServico();
 - 
 ### 🟢 Spring Boot
 No Spring Boot (e no Spring em geral), o Spring é quem gerencia os objetos, graças ao mecanismo de Inversão de Controle (IoC) e Injeção de Dependência (DI).
-````java
+
+```java
 @Service
 public class MeuServico {
     public void executar() {
@@ -86,3 +87,9 @@ public class MeuController {
 | Ciclo de vida do objeto  | Manual                           | Gerenciado pelo Spring               |
 | Escopo dos objetos       | Fixo (variável local ou global)  | Configurável (`@Scope`)              |
 | Acoplamento              | Alto                             | Baixo (graças à injeção de dependência) |
+
+## Beans versus Components
+
+- Quando usar `@Bean`?
+- Quando usar `@Component`?
+- Implementar a **IoC** e **DI**
