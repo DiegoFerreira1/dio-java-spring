@@ -4,41 +4,41 @@ Java RESTful API
 
 ## Diagrama de classes Mermaid
 
-```mermeid
+```mermaid
 classDiagram
 
-class Usuario {
+class User {
     +String name
-    +Conta count
-    +List~Funcionalidade~ features
-    +List~Cartao~ card
-    +List~Noticia~ news
+    +Account account
+    +List~Feature~ features
+    +List~Card~ card
+    +List~News~ news
 }
 
-class Conta {
+class Account {
     +String number
     +String agency
     +Float balance
     +Float limit
 }
 
-class Funcionalidade {
+class Feature {
     +String icon
     +String description
 }
 
-class Cartao {
+class Card {
     +String number
     +String limit
 }
 
-class Noticia {
+class News {
     +String icon
     +String description
 }
 
-Usuario --> Conta
-Usuario --> Funcionalidade
-Usuario --> Cartao
-Usuario --> Noticia
+User --> Account
+User --> Feature
+User --> Card
+User --> News
 ```
