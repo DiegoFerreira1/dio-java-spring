@@ -1,9 +1,5 @@
 debug: true
 spring:
   profiles:
-    active: prd
-    #active: dev
+    active: dev
     
-
-
-  
